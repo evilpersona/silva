@@ -1,33 +1,59 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React from "react";
+import Logo from '../images/logo.jpg';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `white`,
+      marginBottom: `0`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        width:'100%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: `.4rem .0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+
+      <nav className="navbar navbar-expand-lg" style={{width:'100%'}}>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    Menu
+  </button>
+  <img src={Logo} className="logo" alt=""/>
+
+      <h1>
+        
+        
+          <span>The Art of</span>
           {siteTitle}
-        </Link>
       </h1>
-    </div>
+
+  <div className="collapse navbar-collapse" id="navbarTogglerDemo03" style={{float:'right'}}>
+    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li className="nav-item">
+        <Link className="nav-link" to="/">Home</Link>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Rumsfeld3D</a>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/store">Store</Link>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">About</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+      </div>
   </header>
 )
 
