@@ -49,13 +49,20 @@ const IndexPage = ({ data }) => {
   return (
   <Layout>
     <SEO title="Home" />
-    <Slider {...settings}>
+    <Slider {...settings} className="d-sm-none d-none d-lg-block d-md-block d-xl-block">
     {posts.map((post,index) => (
       <div key={index} style={{ width: `${post.width}px` }}> 
         <img src={post.featured_image} />
         </div>
     ))}
     </Slider>
+    <div className="row d-lg-none d-md-none d-xl-none" style={{margin: '0 auto'}}>
+    {posts.map((post,index) => (
+      <div key={index} className="col-sm-12"> 
+        <img src={post.featured_image} className="img-fluid" />
+        </div>
+    ))}
+    </div>
   </Layout>
 )
   };

@@ -46,41 +46,14 @@ collections:
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "navbarAndFooter"
-    label: "Navbar & Footer"
+  - name: "sitesettings"
+    label: "Site Settings"
     files:
-      - file: "src/pages/navbar/index.md"
-        label: "Navbar"
-        name: "navbar"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
-          - {
-              label: "Menu Items",
-              name: "menuItems",
-              widget: "list",
-              fields:
-                [
-                  { label: "Label", name: "label", widget: "string" },
-                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
-                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
-                ],
-            }
-      - file: "src/pages/footer/index.md"
-        label: "Footer"
-        name: "footer"
+      - file: "src/settings/social.yml"
+        label: "Social"
+        name: "social"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
-          - {
-              label: "Logo Image & Tagline",
-              name: "logoImage",
-              widget: "object",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Description", name: "imageAlt", widget: "string" },
-                  { label: "Tagline", name: "tagline", widget: "string" },
-                ],
-            }
           - {
               label: "Social Links",
               name: "socialLinks",
@@ -93,3 +66,20 @@ collections:
                   { label: "Link URL", name: "linkURL", widget: "string" },
                 ],
             }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/content/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
+          - { label: "Image", name: "image", widget: image}
+          - { label: "Body", name: "body", widget: markdown}
+      - file: "src/pages/content/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
+          - { label: "Email", name: "email", widget: string}
+          - { label: "Body", name: "body", widget: markdown}

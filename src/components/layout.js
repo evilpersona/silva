@@ -10,7 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,13 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{
-          marginTop: `1rem`,
-          paddingLeft: '2rem',
-          paddingBottom: '2rem'
-        }}>
-          Social
-        </footer>
+        <Footer />
       </div>
     </>
   )

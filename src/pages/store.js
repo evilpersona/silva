@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Currency from 'react-currency-formatter';
 
 
 const SecondPage = ({ data }) => {
@@ -14,14 +15,22 @@ const SecondPage = ({ data }) => {
   <Layout>
     
     <SEO title="Store" />
+    <div className="container">
     <div className="row">
     {posts.map((post,index) => (
-      <div className="col-md-4 col-sm-12 text-center mb-4 clearfix" key={index}>
-        <a href={post.url}>{post.name}</a><br />
-        <img src={post.picture.large.photo._400sq} />
-        <span className="price">${post.price}</span>
+      <div className="col-md-4 col-sm-12 card text-center mb-4 clearfix" key={index}>
+        <img src={post.picture.large.photo._400sq} className="card-img-top"/>
+        <div className="card-body">
+        <h5 className="card-title">{post.name}</h5>
+        <span className="price card-text"><Currency
+  quantity={post.price}
+  currency="USD"
+/></span><br />
+        <a href={post.url} className="btn btn-primary">Shop Now</a>
+        </div>
       </div>
     ))}
+    </div>
     </div>
   </Layout>
 )

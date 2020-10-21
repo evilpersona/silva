@@ -21,6 +21,13 @@ module.exports = {
         path: `${__dirname}/src/portfolio`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/content`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
