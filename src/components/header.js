@@ -31,19 +31,19 @@ const Header = ({ siteTitle }) => (
   <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
       <li className="nav-item">
-        <Link className="nav-link" to="/">Home</Link>
+        <Link activeClassName="active" className="nav-link" to="/">Home</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="https://rumsfeld3d.com" target="_blank">Rumsfeld3D</a>
+        <a className="nav-link" href="https://rumsfeld3d.com" target="_blank">Rumsfeld3d</a>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/store">Store</Link>
+        <Link activeClassName="active" className="nav-link" to="/store">Store</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/about">About</Link>
+        <Link activeClassName="active" className="nav-link" to="/about">About</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/contact">Contact</Link>
+        <a className="nav-link" href="mailto:info@csilva.com">Contact</a>
       </li>
     </ul>
   </div>

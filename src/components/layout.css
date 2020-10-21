@@ -701,9 +701,15 @@ pre tt:after {
     margin: 0 auto;
     float: none !important;
   }
+  .navbar-nav .nav-link{
+    padding-right: 1rem;
+  } 
   
 }
 
+.nav-link.active{
+  color:#000 !important;
+}
 
 .socialLinks{
   list-style-type: none;
