@@ -702,7 +702,7 @@ pre tt:after {
     float: none !important;
   }
   .navbar-nav .nav-link{
-    padding-right: 1rem;
+    padding-right: 1rem !important;
   } 
   
 }
