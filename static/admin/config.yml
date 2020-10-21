@@ -23,7 +23,7 @@ collections:
           timeFormat: false
         }
       - { label: "Featured Image", name: "featured_image", widget: image}
-      - { label: "Width", name: 'width', widget: select, options: [{label: "Rectangle", value: "500"},{ label: "Small", value: "600" },{ label: "Medium", value: "750" },{label: "Large", value: "900" }]}
+      - { label: "Width", name: 'width', widget: select, options: [{label: "Rectangle", value: "562"},{ label: "Small", value: "600" },{ label: "Medium", value: "750" },{label: "Large", value: "900" }]}
   - name: blog
     label: Blog Posts
     label_singular: Blog Post
