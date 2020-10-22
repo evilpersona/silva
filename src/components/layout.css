@@ -603,6 +603,7 @@ pre tt:after {
 }
 .slick-slide img{
   object-fit: cover;
+  height: 750px;
 }
 .slick-current  {
   filter: saturate(1) !important;
@@ -612,7 +613,7 @@ pre tt:after {
   height:100px;
   transition: all 1s ease-in-out;
   object-fit: cover;
-  max-height: 700px;
+  max-height: 750px;
   
 }
 .slick-prev{
