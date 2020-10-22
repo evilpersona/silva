@@ -14,10 +14,10 @@ const Header = ({ siteTitle }) => (
     <div className="row col-lg-12">
   <div className="col-lg-7 left-side col-sm-12">
     <div className="col-sm-12 clearfix-sm">
-  <img src={Logo} className="logo" alt=""/>
+  <Link to="/"><img src={Logo} className="logo" alt=""/></Link>
   </div>
   <div className="col-sm-12">
-<h1>
+<h1 className="text-sm-center text-md-left">
     <span>The Art of</span><br />
     {siteTitle}
 </h1>

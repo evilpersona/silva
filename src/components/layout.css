@@ -3,13 +3,13 @@ html {
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   background: #fff;
 }
 body {
   margin: 0;
-  width:100%;
+  width:100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -21,6 +21,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+
 }
 article,
 aside,
@@ -768,4 +769,20 @@ h3 a{
     background-color: #000;
     border-color: #000;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+footer{
+  position: relative;
+  width:100%;
+  bottom:0;
+  left:0;
+}
+
+main{
+  min-height:70vh
+}
+@media (max-width:767px){
+  .text-sm-center{
+    text-align: center !important;
+  }
 }

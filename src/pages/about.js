@@ -11,7 +11,7 @@ const AboutPage = ({ data }) => {
     <Layout>
       
       <SEO title="About" />
-      <div className="container">
+      <div className="container content-wrap">
       <div className="row">
           <div className="col-lg-12">
               <div className="col-lg-4 float-left">

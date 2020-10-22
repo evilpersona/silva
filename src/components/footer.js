@@ -5,7 +5,7 @@ import SocialLinks from '../settings/social.yml';
 const Footer = ({ siteTitle }) => (
 <footer className="container-fluid"
 style={{
-          marginTop: `1rem`,
+          marginTop: `.4rem`,
           paddingLeft: '1.5rem',
           paddingBottom: '.4em'
         }}>

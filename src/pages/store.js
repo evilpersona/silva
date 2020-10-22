@@ -15,7 +15,7 @@ const SecondPage = ({ data }) => {
   <Layout>
     
     <SEO title="Store" />
-    <div className="container">
+    <div className="container content-wrap">
     <div className="row">
     {posts.map((post,index) => (
       <div className="col-md-4 col-sm-12 card text-center mb-4 clearfix" key={index}>

@@ -17,19 +17,14 @@ const BlogPage = ({ data }) => {
     <Layout>
       
       <SEO title="Blog" />
-      <div className="container">
+      <div className="container content-wrap">
       <div className="row">
           <div className="col-lg-12">
-              <div className="col-lg-4 col-sm-12">
-              <script id="mcjs" dangerouslySetInnerHTML={{ __html:
-            
-          `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e5851b390a8d9ccee14df9aa4/364288f9eaf10db500ab93b81.js");`}} />
-              </div>
           {posts.map((post,index) => (
               <div key={index} className="row">
-                  <div className="col-lg-8 mr-auto ml-auto mb-2">
+                  <div className="col-lg-8 col-sm-12 mr-auto ml-auto mb-2 text-sm-center text-md-left">
                       <h3 className="text-center"><Link to={post.path}>{post.title}</Link></h3>
-                      <img src={post.featured_image} className="img-fluid float-left mr-4" />
+                      <img src={post.featured_image} className="img-fluid float-md-left mr-md-4 mr-sm-auto ml-sm-auto" />
                       <div dangerouslySetInnerHTML={{ __html: post.html }} />
                   </div>
                   <div className="border-bottom col-lg-12 mb-3"></div>
@@ -48,7 +43,7 @@ const BlogPage = ({ data }) => {
             className: 'form-control ',
           }
         ]}
-        className="form-group form-inline"/>
+        className="form-group form-inline text-sm-center"/>
           </div>
           </div>
       </div>
