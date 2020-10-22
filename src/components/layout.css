@@ -726,3 +726,7 @@ pre tt:after {
 .site-tag{
   font-size:12px; color:#ccc;
 }
+
+h3 a{
+  color: #000 !important;
+}

@@ -86,3 +86,48 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
 
   return;
 }
+
+exports.createPages = async ({ actions, graphql }) => {
+    const { createPage } = actions;
+  
+    await createBlogPages(createPage, graphql);
+  };
+  
+  async function createBlogPages(createPage, graphql) {
+    const postTemplate = path.resolve('./src/templates/blog-posts.js');
+    const posts = await markdownQuery(graphql, 'blog');
+  
+  
+    // Create individual pages
+    posts.forEach(({ node }) => {
+      createPage({
+        path: 'blog/' + node.fields.name,
+        component: postTemplate,
+        context: {
+          name: node.fields.name
+        },
+      });
+    });
+  }
+
+  async function markdownQuery(graphql, source) {
+    const result = await graphql(`
+      {
+        allMarkdownRemark(filter: { fields: { sourceName: { eq: "${source}" } } }) {
+          edges {
+            node {
+              fields {
+                name
+              }
+            }
+          }
+        }
+      }
+    `);
+  
+    if (result.errors) {
+      console.error(result.errors);
+    }
+  
+    return result.data.allMarkdownRemark.edges;
+  }

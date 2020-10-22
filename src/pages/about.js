@@ -11,11 +11,15 @@ const AboutPage = ({ data }) => {
     <Layout>
       
       <SEO title="About" />
-      <div className="container-fluid">
+      <div className="container">
       <div className="row">
           <div className="col-lg-12">
-          <img src={frontmatter.image} alt="Me" className="img-fluid float-left col-lg-4" />
+              <div className="col-lg-4 float-left">
+          <img src={frontmatter.image} alt="Me" className="img-fluid float-right" />
+          </div>
+          <div className="col-lg-8 float-right">
           <p dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
           </div>
       </div>
       </div>

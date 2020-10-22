@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 
 function SampleNextArrow(props) {
@@ -30,8 +31,8 @@ var settings = {
   className: "slider variable-width",
   dots: false,
   infinite: true,
-  speed: 500,
-  autoplay:false,
+  speed: 2000,
+  autoplay:true,
   arrows: true,
   centerMode: true,
   slidesToShow: 1,
