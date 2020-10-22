@@ -7,7 +7,7 @@ const Footer = ({ siteTitle }) => (
 style={{
           marginTop: `.4rem`,
           paddingLeft: '1.5rem',
-          paddingBottom: '.4em'
+          paddingBottom: '0em'
         }}>
             <ul className="socialLinks">
           {SocialLinks.socialLinks.map((post,index) => (

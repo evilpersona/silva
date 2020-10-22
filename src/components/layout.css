@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
   width:100vw;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -784,5 +785,10 @@ main{
 @media (max-width:767px){
   .text-sm-center{
     text-align: center !important;
+  }
+}
+@media (min-width:1100px){
+  header{
+    height:117px !important;
   }
 }
