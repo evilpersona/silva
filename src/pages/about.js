@@ -18,7 +18,7 @@ const AboutPage = ({ data }) => {
           <img src={frontmatter.image} alt="Me" className="img-fluid float-right" />
           </div>
           <div className="col-lg-8 float-right">
-          <p dangerouslySetInnerHTML={{ __html: html }} />
+          <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
           </div>
       </div>
