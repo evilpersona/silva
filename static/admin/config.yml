@@ -43,7 +43,7 @@ collections:
           timeFormat: false
         }
       - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: "Featured Image", name: "featured_image", widget: image}
+      - { label: "Featured Image", name: "featured_image", widget: image, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: "sitesettings"
