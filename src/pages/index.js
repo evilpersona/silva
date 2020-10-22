@@ -28,7 +28,7 @@ function SamplePrevArrow(props) {
 }
 
 var settings = {
-  className: "slider variable-width",
+  className: "slider ",
   dots: false,
   infinite: true,
   speed: 2000,
@@ -52,8 +52,8 @@ const IndexPage = ({ data }) => {
     <SEO title="Home" />
     <Slider {...settings} className="d-sm-none d-none d-lg-block d-md-block d-xl-block">
     {posts.map((post,index) => (
-      <div key={index} style={{ width: `${post.width}px` }}> 
-        <img src={post.featured_image} />
+      <div key={index}> 
+        <img src={post.featured_image} className="img-fluid" />
         </div>
     ))}
     </Slider>
