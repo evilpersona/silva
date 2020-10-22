@@ -17,7 +17,7 @@ const BlogPost = ({ data }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-                <h1 className="mb-0">{frontmatter.title}</h1>
+                <h1 className="mb-3">{frontmatter.title}</h1>
                     <div className="col-lg-8 mr-auto ml-auto">
                     <img src={frontmatter.featured_image} />
                     </div>
