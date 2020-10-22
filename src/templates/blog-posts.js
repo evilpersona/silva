@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
                     
             </div>
             <div className="col-lg-8 mr-auto ml-auto">
-                  <p dangerouslySetInnerHTML={{ __html: html }} />
+                  <div dangerouslySetInnerHTML={{ __html: html }} />
                   <Link to="/blog">Back to Blog</Link>
                   </div>
                  

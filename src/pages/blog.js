@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
                   <div className="col-lg-8 mr-auto ml-auto mb-2">
                       <h3 className="text-center"><Link to={post.path}>{post.title}</Link></h3>
                       <img src={post.featured_image} className="img-fluid " />
-                      <p dangerouslySetInnerHTML={{ __html: post.html }} />
+                      <div dangerouslySetInnerHTML={{ __html: post.html }} />
                   </div>
                   <div className="border-bottom col-lg-12 mb-3"></div>
               </div>
