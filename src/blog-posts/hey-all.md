@@ -2,6 +2,7 @@
 title: Hey all!
 date: October 21, 2020
 author: Christopher Silva
+featured_image: /img/122051803_1296894184011206_3581976980228696553_n.png
 ---
 Welcome to the new ChristopherSilva.com!
 
