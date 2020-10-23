@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Christopher Silva `,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Christopher Silva is a New York based illustrator. Most known for working on Rumsfeld3d. When not working on Rumsfeld he is drawing monkeys, making chicken and working as a designer.`,
     author: `@gatsbyjs`,
   },
   plugins: [
