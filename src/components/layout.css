@@ -786,6 +786,9 @@ main{
   .text-sm-center{
     text-align: center !important;
   }
+  .text-sm-left{
+    text-align: left !important;
+  }
 }
 @media (min-width:1100px){
   header{
