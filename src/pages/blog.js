@@ -22,7 +22,7 @@ const BlogPage = ({ data }) => {
           <div className="col-lg-12">
           {posts.map((post,index) => (
               <div key={index} className="row">
-                  <div className="col-lg-8 col-sm-12 mr-auto ml-auto mb-2 text-sm-center text-md-left">
+                  <div className="col-lg-8 col-sm-12 mr-auto ml-auto mb-2 text-left">
                       <h3 className="text-center"><Link to={post.path}>{post.title}</Link></h3>
                       <img src={post.featured_image} className="img-fluid float-md-left mr-md-4 mr-sm-auto ml-sm-auto" />
                       <div dangerouslySetInnerHTML={{ __html: post.html }} />
