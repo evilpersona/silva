@@ -7,3 +7,7 @@ socialLinks:
     imageAlt: Twitter
     label: Twitter
     linkURL: https://twitter.com/23csilva
+  - linkURL: https://www.facebook.com/TheArtofChristopherSilva
+    imageAlt: Facebook
+    label: Facebook
+    image: /img/f_logo_rgb-hex-blue_512.png
