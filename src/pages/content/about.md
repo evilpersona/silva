@@ -1,5 +1,5 @@
 ---
-image: /img/profile.jpg
+image: /img/thwmow7x_400x400.jpg
 ---
 # About Me
 
