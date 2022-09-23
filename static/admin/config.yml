@@ -5,16 +5,16 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: photography
-      label: Photography
-      label_singular: Photography
-      folder: src/photography
-      create: true
-      preview_path: 'photography/{{slug}}'
-      editor:
-        preview: false
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - {
+    label: Photography
+    label_singular: Photography
+    folder: src/photography
+    create: true
+    preview_path: 'photography/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
             label: 'Date',
             name: 'date',
             widget: 'datetime',
@@ -22,8 +22,8 @@ collections:
             dateFormat: 'MMMM D, YYYY',
             timeFormat: false
           }
-        - { label: "Featured Image", name: "featured_image", widget: image}
-        - { label: "Width", name: 'width', widget: select, options: [{label: "Rectangle", value: "562"},{ label: "Small", value: "600" },{ label: "Medium", value: "750" },{label: "Large", value: "900" }]}
+      - { label: "Featured Image", name: "featured_image", widget: image}
+      - { label: "Width", name: 'width', widget: select, options: [{label: "Rectangle", value: "562"},{ label: "Small", value: "600" },{ label: "Medium", value: "750" },{label: "Large", value: "900" }]}
   - name: portfolio
     label: Portfolio
     label_singular: Portfolio
