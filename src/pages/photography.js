@@ -42,7 +42,7 @@ var settings = {
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
 };
-const IndexPage = ({ data }) => {
+const PhotoPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter
