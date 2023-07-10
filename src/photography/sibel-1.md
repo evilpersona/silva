@@ -1,6 +1,6 @@
 ---
-title: Sibel
+title: Marriage
 date: July 10, 2023
-featured_image: /img/82620149_10158074197335209_4015753104174612480_n.jpg
-width: "750"
+featured_image: /img/53278918_10157235766145209_855241878281388032_n.jpg
+width: "562"
 ---
