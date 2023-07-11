@@ -75,7 +75,7 @@ const PhotoPage = ({ data }) => {
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "photography" } } }
+      filter: { fields: { sourceName: { eq: "portfolio" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
