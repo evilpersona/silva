@@ -47,7 +47,7 @@ const PhotoPage = ({ data }) => {
     html: node.html,
     ...node.frontmatter
   }));
-  console.log(posts);
+  console.log(data);
   return (
   <Layout>
     <SEO title="Photography" />
